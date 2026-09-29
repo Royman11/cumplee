@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#8b5cf6">
+  <title>Una pequeña sorpresa para ti 💜</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-hearts" aria-hidden="true"></div>
+  <div id="confetti" aria-hidden="true"></div>
+  <div class="music-dock">
+    <button id="musicBtn" class="music-btn" aria-label="Música">🎵</button>
+    <button id="trackBtn" class="music-btn small" aria-label="Cambiar estilo">🎉</button>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="badge">💌 UNA SORPRESA HECHA CON CARIÑO</div>
+      <h1>Hoy no es un día cualquiera...</h1>
+      <p class="hero-sub">Hay alguien que merece recibir una pequeña dosis de alegría. Y sí... esta página es para ti. 😌</p>
+      <button class="primary-btn" id="startBtn">Abrir mi sorpresa ✨</button>
+      <div class="scroll-hint">desliza para descubrir ↓</div>
+    </section>
+
+    <section class="reveal hidden-section" id="surprise">
+      <div class="section-tag">🎉 PRIMERA SORPRESA</div>
+      <h2>¡Feliz cumpleaños, Kelly! 💜</h2>
+      <p class="lead">
+        Espero que hoy te recuerden algo que a veces se nos olvida:
+        <strong>eres una persona muy especial</strong> y mereces muchos motivos para sonreír.
+      </p>
+
+      <div class="photo-card">
+        <div class="photo-frame">
+          <img src="images/foto-amistad.jpeg" alt="Foto de una amistad">
+          <span class="photo-sticker sticker-one">📸</span>
+          <span class="photo-sticker sticker-two">😂</span>
+        </div>
+        <div class="photo-caption">
+          <span>Un recuerdo que merecía aparecer aquí</span>
+          <small>Porque las mejores historias empiezan con momentos así.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="message hidden-section">
+      <div class="section-tag">💭 UN MENSAJE</div>
+      <div class="letter">
+        <div class="letter-top">Para una amiga increíble 💜</div>
+        <p>
+          Hoy quiero desearte un cumpleaños lleno de cosas bonitas, pero no de esas
+          frases típicas que uno copia y pega. 😌
+        </p>
+        <p>
+          Quiero que tengas un año lleno de momentos que te hagan decir:
+          <em>“qué bueno que pasó esto”</em>. Que te rías hasta que te duela la barriga,
+          que cumplas metas, que conozcas lugares increíbles y que nunca te falten
+          personas con las que puedas ser tú misma.
+        </p>
+        <p>
+          Gracias por los momentos, por las risas, por las conversaciones y por esas
+          situaciones que probablemente algún día recordaremos diciendo:
+          <strong>“¿te acuerdas de eso?”</strong> 😂
+        </p>
+        <p class="signature">Con mucho cariño,<br><span>alguien que se tomó el trabajo de hacerte esta página 😎</span></p>
+      </div>
+    </section>
+
+    <section class="cake-sec hidden-section">
+      <div class="section-tag">🎂 PIDE UN DESEO</div>
+      <h2>Apaga las velitas</h2>
+      <p class="lead">Toca cada velita para apagarla. Pide el deseo en silencio... y no lo cuentes. 🤫</p>
+      <div class="cake">
+        <div class="candles">
+          <button class="candle" aria-label="Apagar vela">🕯️</button>
+          <button class="candle" aria-label="Apagar vela">🕯️</button>
+          <button class="candle" aria-label="Apagar vela">🕯️</button>
+        </div>
+        <div class="cake-emoji">🎂</div>
+      </div>
+      <p id="wishText" class="wish-text"></p>
+      <button id="relightBtn" class="ghost-btn">Volver a encenderlas 🔥</button>
+    </section>
+
+    <section class="game hidden-section">
+      <div class="section-tag">🎮 MINI JUEGO</div>
+      <h2>Una pregunta importantísima...</h2>
+      <p>¿Qué merece una cumpleañera como tú?</p>
+      <div class="choices">
+        <button class="choice">🍰 Una torta gigante</button>
+        <button class="choice">😂 Reírse todo el día</button>
+        <button class="choice">💜 Que la consientan</button>
+        <button class="choice">✨ TODAS LAS ANTERIORES</button>
+      </div>
+      <div id="gameResult" class="game-result"></div>
+    </section>
+
+    <section class="coupons hidden-section">
+      <div class="section-tag">🎟️ REGALOS</div>
+      <h2>Cupones canjeables</h2>
+      <p class="lead">Toca cada cupón para descubrir qué te tocó. Válidos todo el año (o hasta que me arrepienta 😎).</p>
+      <div class="coupon-grid">
+        <button class="coupon"><span class="front">🍕<br>Cupón #1</span><span class="back">Vale por salidas a comer todos los fines de semana, ver películas y pedir domicilio 🍿</span></button>
+        <button class="coupon"><span class="front">🍦<br>Cupón #2</span><span class="back">Vale por un helado. Sujeto a disponibilidad de presupuesto 😂</span></button>
+        <button class="coupon"><span class="front">🎤<br>Cupón #3</span><span class="back">Vale por una canción de cumpleaños desafinada en audio</span></button>
+        <button class="coupon"><span class="front">👂<br>Cupón #4</span><span class="back">Vale por escuchar tus chismes sin juzgar (casi nada 😌)</span></button>
+        <button class="coupon"><span class="front">🎬<br>Cupón #5</span><span class="back">Vale por una salida a lo que tú quieras. Tú mandas hoy 👑</span></button>
+        <button class="coupon"><span class="front">💜<br>Cupón #6</span><span class="back">Vale por un "gracias por existir". Ilimitado, sin vencimiento</span></button>
+      </div>
+    </section>
+
+    <section class="secret hidden-section">
+      <div class="section-tag">🤫 ZONA SECRETA</div>
+      <h2>Hay algo más...</h2>
+      <p>Pero para verlo tendrás que atrapar el botón. Suerte... la vas a necesitar. 😈</p>
+      <div class="meter" aria-hidden="true"><div id="meterFill"></div></div>
+      <small id="triesText" class="tries-text">Intentos: 0</small>
+      <div class="secret-box">
+        <button id="secretBtn" class="secret-btn">NO PRESIONAR 👀</button>
+        <p id="secretText" class="secret-text"></p>
+      </div>
+    </section>
+
+    <section class="final hidden-section">
+      <div class="final-card">
+        <div class="floating-emoji">🎈</div>
+        <div class="floating-emoji second">🦋</div>
+        <div class="floating-emoji third">💜</div>
+        <h2>Y ahora sí...</h2>
+        <div class="big-birthday">¡FELIZ CUMPLEAÑOS! 🎂</div>
+        <p>
+          Que este nuevo año de vida venga cargado de aventuras, risas,
+          buenas personas y muchas razones para decir “valió la pena”.
+        </p>
+        <button id="celebrateBtn" class="primary-btn">Celebrar 🎉</button>
+        <div id="finalMessage"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Hecho con cariño, código y un poquito de locura 💜
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
